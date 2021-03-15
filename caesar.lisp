@@ -1,6 +1,10 @@
 ;; https://www.dcode.fr/deranged-alphabet-generator
-;; caesar encrypt "agszhxpbcmtoekndvuwrjqyilf" "please help" => "dohawh bhod"
-;; caesar decrypt "agszhxpbcmtoekndvuwrjqyilf" "dohawh bhod" => "please help"
+
+;; sbcl --script caesar.lisp encrypt "agszhxpbcmtoekndvuwrjqyilf" "preciso de ajuda"
+;; result: "duhscwn zh amjza"
+
+;; sbcl --script caesar.lisp decrypt "agszhxpbcmtoekndvuwrjqyilf" "duhscwn zh amjza"
+;; result: "preciso de ajuda"
 
 (defparameter *alphabet* "abcdefghijklmnopqrstuvxwyz")
 (defparameter *deranged* (string-downcase (nth 2 sb-ext:*posix-argv*)))
