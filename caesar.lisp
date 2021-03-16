@@ -19,9 +19,8 @@
         (progn
           (let ((x (position i *alphabet*)))
           (setf (char *text* *index*) (char *deranged* x)))))
-      (setf *index* (+ *index* 1)))
-  )
-   
+      (setf *index* (+ *index* 1))))
+    
   (progn
     (loop
       for i across *text* do
